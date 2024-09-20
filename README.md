@@ -1,40 +1,60 @@
-# Bookshelf App Starter Project
+# Bookshelf App
 
-Ini adalah starter project tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula yang sudah saya kerjakan.
+## Deskripsi Proyek
 
-- Dalam menampilkan data-data buku, wajib memberikan beberapa atribut pada setiap elemennya.
+Bookshelf App adalah aplikasi web yang memungkinkan pengguna untuk mengelola koleksi buku mereka dengan mudah. Pengguna dapat menambahkan, memindahkan, dan menghapus buku dari rak yang tersedia. Aplikasi ini menggunakan teknologi HTML, CSS, dan JavaScript, serta memanfaatkan localStorage untuk menyimpan data buku secara permanen, bahkan setelah halaman ditutup.
 
-  - `data-bookid`: menampung nilai ID masing-masing buku.
-  - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
-    - `bookItem`: elemen kontainer yang menampung data-data buku.
-    - `bookItemTitle`: judul buku
-    - `bookItemAuthor`: penulis buku
-    - `bookItemYear`: tahun rilis buku
-    - `bookItemIsCompleteButton`: tombol untuk mengubah kondisi buku dari “Belum selesai dibaca” menjadi “Selesai dibaca” atau sebaliknya.
-    - `bookItemDeleteButton`: tombol untuk menghapus buku.
-    - `bookItemEditButton`: tombol untuk mengubah data buku.
+## Fitur Utama
 
-  Dalam pengerjaan tugas ini saya mengikuti templat buku berikut.
+1. **Menambahkan Buku**: Pengguna dapat menambahkan buku baru dengan mengisi formulir yang disediakan. Setiap buku terdiri dari atribut seperti judul, penulis, tahun rilis, dan status (selesai dibaca atau belum).
+  
+2. **Rak Buku**: Terdapat dua rak buku:
+   - **Belum Selesai Dibaca**: Menyimpan buku-buku yang belum selesai dibaca.
+   - **Selesai Dibaca**: Menyimpan buku-buku yang telah selesai dibaca.
 
-```html
-<div data-bookid="{{ ID_buku }}" data-testid="bookItem">
-  <h3 data-testid="bookItemTitle">{{ judul_buku }}</h3>
-  <p data-testid="bookItemAuthor">Penulis: {{ penulis_buku }}</p>
-  <p data-testid="bookItemYear">Tahun: {{ tahun_rilis_buku }}</p>
-  <div>
-    <button data-testid="bookItemIsCompleteButton">{{ tombol_untuk_ubah_kondisi }}</button>
-    <button data-testid="bookItemDeleteButton">{{ tombol_untuk_hapus }}</button>
-    <button data-testid="bookItemEditButton">{{ tombol_untuk_edit }}</button>
-  </div>
-</div>
-```
-# Fitur
+3. **Memindahkan Buku Antar Rak**: Buku dapat dipindahkan dari satu rak ke rak lainnya dengan mudah.
 
-- Mampu Menambahkan Buku Baru
-- Memiliki Dua Rak Buku: “Belum Selesai Dibaca” dan “Selesai Dibaca”
-- Mampu Memindahkan Buku Antar Rak
-- Mampu Menghapus Buku
-- Memanfaatkan localStorage sebagai Penyimpanan Buku
-- Menambahkan Fitur Pencarian Buku 
-- Menerapkan Styling
-- Kode Ditulis Secara Rapi dan Bersih
+4. **Menghapus Buku**: Pengguna dapat menghapus buku dari rak, dan perubahan ini juga akan terupdate di localStorage.
+
+5. **Penyimpanan Lokal**: Data buku disimpan menggunakan localStorage, sehingga tetap ada setelah halaman dimuat ulang.
+
+## Kriteria Wajib
+
+Aplikasi ini memenuhi lima kriteria wajib sebagai berikut:
+
+1. **Penyimpanan dengan localStorage**: Data buku yang disimpan tetap ada walaupun halaman ditutup. Setiap buku disimpan sebagai objek JavaScript dengan format:
+   ```javascript
+   {
+     id: string | number,
+     title: string,
+     author: string,
+     year: number,
+     isComplete: boolean,
+   }
+   ```
+
+2. **Menambahkan Buku**: Buku baru dapat ditambahkan melalui formulir. ID buku dihasilkan secara otomatis menggunakan timestamp.
+
+3. **Dua Rak Buku**: Terdapat dua rak buku yang jelas, yaitu "Belum selesai dibaca" dan "Selesai dibaca".
+
+4. **Memindahkan Buku**: Buku dapat dipindahkan antar rak, dan statusnya akan diperbarui di localStorage.
+
+5. **Menghapus Buku**: Buku dapat dihapus dari rak dan akan dihapus dari localStorage juga.
+
+## Cara Instalasi
+
+1. **Clone Repositori**: 
+   ```bash
+   git clone [URL_REPOSITORI]
+   cd Bookshelf-Apps
+   ```
+
+2. **Buka File HTML**: Buka file `index.html` di browser pilihan Anda.
+
+3. **Gunakan Aplikasi**: Anda dapat mulai menambahkan, memindahkan, dan menghapus buku sesuai keinginan.
+
+## Contoh Penggunaan
+
+1. **Menambahkan Buku**: Masukkan detail buku pada formulir dan klik "Tambah Buku".
+2. **Memindahkan Buku**: Klik tombol untuk memindahkan status buku antara "Belum Selesai Dibaca" dan "Selesai Dibaca".
+3. **Menghapus Buku**: Klik tombol "Hapus Buku" untuk menghapus buku dari rak.
