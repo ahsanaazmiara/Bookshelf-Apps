@@ -28,3 +28,13 @@ Ini adalah starter project tugas akhir kelas Belajar Membuat Front-End Web untuk
   </div>
 </div>
 ```
+# Fitur
+
+- Mampu Menambahkan Buku Baru
+- Memiliki Dua Rak Buku: “Belum Selesai Dibaca” dan “Selesai Dibaca”
+- Mampu Memindahkan Buku Antar Rak
+- Mampu Menghapus Buku
+- Memanfaatkan localStorage sebagai Penyimpanan Buku
+- Menambahkan Fitur Pencarian Buku 
+- Menerapkan Styling
+- Kode Ditulis Secara Rapi dan Bersih
