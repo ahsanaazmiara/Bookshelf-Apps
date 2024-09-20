@@ -1,14 +1,8 @@
 # Bookshelf App Starter Project
 
-Ini adalah starter project untuk siswa yang sedang mengerjakan tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula.
+Ini adalah starter project tugas akhir kelas Belajar Membuat Front-End Web untuk Pemula yang sudah saya kerjakan.
 
-## Ketentuan Pengerjaan Tugas
-
-Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentuan-ketentuan berikut dalam mengerjakan tugas ini.
-
-- Anda dilarang mengedit atau menghapus atribut `data-testid` pada elemen-elemen HTML.
-- Ini masih berkaitan dengan poin sebelumnya. Jika Anda memiliki kebutuhan seperti styling elemen dan perlu menambahkan atribut seperti class, itu tidak dilarang selama atribut `data-testid` beserta nilainya tidak diubah atau dihapus.
-- Dalam menampilkan data-data buku, Anda wajib memberikan beberapa atribut pada setiap elemennya.
+- Dalam menampilkan data-data buku, wajib memberikan beberapa atribut pada setiap elemennya.
 
   - `data-bookid`: menampung nilai ID masing-masing buku.
   - `data-testid`: penanda jenis data buku yang ditampilkan. Berikut daftarnya.
@@ -20,7 +14,7 @@ Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentu
     - `bookItemDeleteButton`: tombol untuk menghapus buku.
     - `bookItemEditButton`: tombol untuk mengubah data buku.
 
-  Agar pengerjaan tugas lebih mudah, Anda dapat mengikuti templat buku berikut.
+  Dalam pengerjaan tugas ini saya mengikuti templat buku berikut.
 
 ```html
 <div data-bookid="{{ ID_buku }}" data-testid="bookItem">
@@ -34,5 +28,3 @@ Untuk mempermudah penilaian submission yang dikirim, Anda perlu memahami ketentu
   </div>
 </div>
 ```
-
-Selamat mengerjakan dan sukses selalu!
